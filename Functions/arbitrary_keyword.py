@@ -12,3 +12,5 @@ def seat_profile(first, last, **passenger_info):
 
 passenger_profile = seat_profile('rene', 'cortez', seat_number=36, breakfast_ordered='yes')
 print(passenger_profile)
+
+# {'breakfast_ordered': 'yes', 'first_name': 'rene', 'last_name': 'cortez', 'seat_number': 36}
