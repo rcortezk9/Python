@@ -2,6 +2,7 @@
 # Setting a default value for an attribute
 # Modifying an attributes value directly
 # Modifying an attribute value through a method
+# Incrementing an attributes value throught a method.
 
 class Ereader():
     """A class to represent an ereader."""
@@ -25,8 +26,14 @@ class Ereader():
     def update_library_count(self, ebook_count):
         self.library_count = ebook_count
 
+    def increment_library_count(self, purchased_ebooks):
+        self.library_count += purchased_ebooks
+
 my_new_erearder = Ereader('Amazon Kindle', 'Paperwhite', 'Adjustable', 'Several month of battery life', '300 DPI')
 print(my_new_erearder.get_ereader_name())
 
 my_new_erearder.update_library_count(48)
+my_new_erearder.read_library_count()
+
+my_new_erearder.increment_library_count(5)
 my_new_erearder.read_library_count()
