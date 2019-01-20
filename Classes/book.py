@@ -28,6 +28,8 @@ class Books():
 
 # Creating an instance of our book class.
 my_book = Books('elon musk', 14.99, 'virgin books')
+your_book = Books('Game of thornes', 9.99, 'I dont know')
 
 # Calling our ebook_reader method
 my_book.ebook_reader()
+your_book.hardback()
