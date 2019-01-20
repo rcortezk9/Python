@@ -22,4 +22,12 @@ class Books():
         """Simulate a ebook"""
         print(self.name.title() + " is an ebook.")
 
+    def ebook_reader(self):
+        """Simulate an ebook reader."""
+        print("Library: " + self.name.title() + ", $" + str(self.price) + ", " + self.publisher.title() + ".")
+
+# Creating an instance of our book class.
 my_book = Books('elon musk', 14.99, 'virgin books')
+
+# Calling our ebook_reader method
+my_book.ebook_reader()
