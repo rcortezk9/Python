@@ -1,5 +1,6 @@
 # Creating a new ereader class
 # Setting a default value for an attribute
+# Modifying and attributes value directly
 
 class Ereader():
     """A class to represent an ereader."""
@@ -22,4 +23,6 @@ class Ereader():
 
 my_new_erearder = Ereader('Amazon Kindle', 'Paperwhite', 'Adjustable', 'Several month of battery life', '300 DPI')
 print(my_new_erearder.get_ereader_name())
+
+my_new_erearder.library_count = 36
 my_new_erearder.read_library_count()
