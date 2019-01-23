@@ -1,4 +1,4 @@
-# Inheritance
+# Storing multiple models.
 
 class Ereader():
     """A class to represent an ereader."""
@@ -41,14 +41,3 @@ class KindleFire(Ereader):
 
         super().__init__(make, model, backlight, battery, screen_type)
         self.firescreen = Screen() # Create an new instance of screen. Store that in attribute
-
-my_kindle_fire = KindleFire('amazon', 'kindle fire', 'backlight', '12 hour battery life', 'color screen')
-print(my_kindle_fire.get_ereader_name())
-
-my_kindle_fire.firescreen.describe_screen()
-
-# Output
-
-# Amazon - Kindle Fire - Backlight - 12 Hour Battery Life - Color Screen
-
-# Fire HD 8 feature a widescreen 1280 * 800 HD screen.
