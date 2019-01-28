@@ -13,3 +13,8 @@ def word_count(filename):
         words = contents.split()
         number_words = len(words)
         print('The file ' + filename + " has approximately " + str(number_words) + " words")
+
+# Assign file names to be anaylze to a variable
+filenames = ['heathcliff.txt', 'mobydick.txt']
+for filename in filenames:
+    word_count(filename)
