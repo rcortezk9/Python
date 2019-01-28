@@ -7,8 +7,9 @@ def word_count(filename):
         with open(filename) as file_object:
             contents = file_object.read()
     except FileNotFoundError:
-        message = "Sorry, the file " + filename + " cannot be found"
-        print(message)
+        pass
+        # message = "Sorry, the file " + filename + " cannot be found"
+        # print(message)
     else:
         words = contents.split()
         number_words = len(words)
