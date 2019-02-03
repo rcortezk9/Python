@@ -2,7 +2,7 @@
 # Setting a default value for an attribute
 # Modifying an attributes value directly
 # Modifying an attribute value through a method
-# Incrementing an attributes value throught a method.
+# Incrementing an attributes value through a method.
 
 class Ereader():
     """A class to represent an ereader."""
